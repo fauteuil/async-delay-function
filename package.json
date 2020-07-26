@@ -1,6 +1,6 @@
 {
     "name": "async-function-delay",
-    "version": "1.0.3",
+    "version": "2.0.0",
     "author": {
         "name": "Dave Held",
         "email": "dav3h3ld@gmail.com"
@@ -9,14 +9,21 @@
         "type": "git",
         "url": "https://github.com/fauteuil/async-function-delay.git"
     },
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
     "keywords": [
         "async",
-        "function",
-        "delay",
         "await",
-        "setTimeout",
-        "promise"
+        "delay",
+        "function",
+        "promise",
+        "setTimeout"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^3.9.7"
+    }
 }
